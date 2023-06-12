@@ -1,0 +1,52 @@
+/*  cards svg index  */
+.svg-cards {
+  /*  Making section a Flex-container and aligning elements  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  width: 1200px;
+
+  &__card {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  &__card--item {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  &__card--box {
+    width: 270px;
+    height: 120px;
+    background: $color-gris;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__card--svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__card--title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  &__card--paragraph {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $color-font;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+/*  menú de botones portafolio  */
+
+.menu-buttons {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+
+  &__portafolio {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    padding: 10px;
+    padding-top: 70px;
+  }
+
+  &__button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    width: 128px;
+    height: 38px;
+    background: $color-gris;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    border: $color-white;
+  }
+
+  &__button:hover {
+    color: $color-white;
+    background-color: $color-brand;
+  }
+
+  &__portafolio--current {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    width: 128px;
+    height: 38px;
+    background: $color-gris;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    border: $color-gris;
+    color: $color-white;
+    background-color: $color-brand;
+  }
+}

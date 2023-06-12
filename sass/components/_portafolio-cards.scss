@@ -1,0 +1,48 @@
+/*portafolio cards*/
+
+.portafolio {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+
+  &__card-emergent--content {
+    color: $color-white;
+    padding: 63px 24px;
+  }
+
+  &__container {
+    width: 370px;
+    background: $color-white;
+    border: 1px solid $color-white;
+  }
+
+  &__container:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__container:hover&__card-emergent {
+    transform: translateY(0%);
+  }
+
+  &__card-body {
+    padding: 20px 24px;
+  }
+
+  &__card-emergent {
+    position: absolute;
+    top: 0;
+    height: 294px;
+    width: 370px;
+    background: $color-brand;
+    letter-spacing: 0.03em;
+    transform: translateY(105%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+}

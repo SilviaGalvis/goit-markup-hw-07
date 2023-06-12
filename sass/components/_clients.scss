@@ -1,0 +1,34 @@
+/*  sección clientes index  */
+.clients {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+  justify-content: center;
+
+  &__card {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    color: $color-font;
+  }
+
+  &__card--svg {
+    border: 1px solid $color-font;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 170px;
+    height: 81px;
+  }
+  &__card--svg:hover,
+  &__card--svg:focus {
+    border: 1px solid $color-brand;
+    color: $color-brand;
+  }
+
+  &__card--svg:hover + .svg,
+  &__card--svg:focus + .svg {
+    fill: $color-brand;
+  }
+}

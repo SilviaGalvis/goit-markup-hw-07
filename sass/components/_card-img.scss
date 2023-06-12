@@ -1,0 +1,31 @@
+/*  tarjetas de imágenes del index  */
+.card-img {
+  display: flex;
+  margin: 20px;
+  list-style: none;
+  justify-content: center;
+
+  &__image {
+    display: inline;
+    padding: 5px;
+    position: relative;
+  }
+
+  &__text {
+    color: white;
+    position: absolute;
+    align-items: center;
+    bottom: 20px;
+  }
+
+  &__lable {
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    bottom: 10px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,41 @@
+.social-list {
+  @include flex;
+  padding: 30px;
+  list-style: none;
+  gap: 10px;
+
+  &__item {
+    height: 40px;
+    width: 40px;
+    @include flex;
+    border-radius: 50%;
+    color: AFB1B8;
+  }
+
+  &__item--foot {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    @include flex;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-font;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__item:hover {
+    color: $color-white;
+    background-color: $color-brand;
+  }
+
+  &__item--foot:hover {
+    color: $color-white;
+    background-color: $color-brand;
+  }
+
+  &__foot {
+    display: flex;
+    list-style: none;
+  }
+}

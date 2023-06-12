@@ -1,0 +1,35 @@
+.booking {
+  display: flex;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+  gap: 50px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  &__icon {
+    color: $color-font;
+  }
+
+  &__icon:hover {
+    color: $color-brand;
+  }
+
+  &__icon:focus {
+    color: $color-brand;
+  }
+
+  &__icon--email {
+    width: 20px;
+    height: 12px;
+  }
+
+  &__icon--phone {
+    width: 10px;
+    height: 17px;
+  }
+}

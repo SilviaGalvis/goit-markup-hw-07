@@ -1,0 +1,30 @@
+.banner {
+  height: 600px;
+  left: -4px;
+  background-color: #2f303a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    width: 197px;
+    height: 38px;
+    background: $color-gris;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    border: $color-gris;
+    color: $color-white;
+    background-color: $color-brand;
+  }
+}
